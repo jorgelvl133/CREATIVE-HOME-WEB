@@ -1,0 +1,11 @@
+# Renders originales (pesados): se quedan solo en tu computadora.
+# La web usa las versiones livianas de la carpeta img/.
+web/
+
+# Archivos del sistema y de herramientas
+.DS_Store
+Thumbs.db
+desktop.ini
+.vercel/
+.env*
+*.log
