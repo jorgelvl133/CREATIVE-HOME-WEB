@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Libro de Reclamaciones | Creative Home</title>
+<meta name="description" content="Libro de Reclamaciones virtual de Creative Home. Registra tu reclamo o queja.">
+<meta name="color-scheme" content="light">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" type="image/png" href="/img/marca/logo.png">
+<link rel="canonical" href="https://creativehomeperu.vercel.app/libro-de-reclamaciones.html">
+<link rel="stylesheet" href="/legal.css">
+<script src="/reclamaciones.js" defer></script>
+</head>
+<body>
+<header><div class="w"><a href="/" aria-label="Creative Home, ir al inicio"><img src="/img/marca/logo.png" width="208" height="320" alt="Creative Home"></a><a class="vb" href="/">← Volver a la tienda</a></div></header>
+<main><div class="w">
+<div class="tag">Conforme al Código de Protección y Defensa del Consumidor</div>
+<h1>Libro de Reclamaciones</h1>
+
+<div class="box">
+<p style="margin-top:0"><b>Proveedor:</b> <span class="pend" data-p="razon">[Razón social pendiente]</span> (Creative Home)<br>
+<b>RUC:</b> <span class="pend" data-p="ruc">[RUC pendiente]</span><br>
+<b>Domicilio:</b> <span class="pend" data-p="dir">[Dirección pendiente]</span>, Lima, Perú</p>
+<p style="margin-bottom:0"><b>Hoja de reclamación N.°</b> <span id="nro">—</span> · <b>Fecha:</b> <span id="fec">—</span></p>
+</div>
+
+<form id="lr" novalidate>
+<fieldset>
+<legend>1. Tus datos</legend>
+<label for="nom">Nombre completo</label><input id="nom" maxlength="120" autocomplete="name" required>
+<label for="dom">Domicilio</label><input id="dom" maxlength="200" autocomplete="street-address" required>
+<div class="rw">
+<div><label for="tdoc">Tipo de documento</label><select id="tdoc"><option>DNI</option><option>Carné de extranjería</option><option>Pasaporte</option></select></div>
+<div><label for="ndoc">Número de documento</label><input id="ndoc" maxlength="15" inputmode="numeric" required></div>
+</div>
+<div class="rw">
+<div><label for="tel">Celular</label><input id="tel" type="tel" maxlength="15" inputmode="tel" autocomplete="tel" required></div>
+<div><label for="cor">Correo electrónico <small>Opcional</small></label><input id="cor" type="email" maxlength="120" autocomplete="email"></div>
+</div>
+<label for="apo">Padre, madre o apoderado <small>Solo si eres menor de edad</small></label><input id="apo" maxlength="120">
+</fieldset>
+
+<fieldset>
+<legend>2. Producto o servicio</legend>
+<div class="rd" role="radiogroup" aria-label="Tipo"><label><input type="radio" name="bien" value="Producto" checked>Producto</label><label><input type="radio" name="bien" value="Servicio">Servicio</label></div>
+<label for="mon">Monto reclamado (S/) <small>Opcional</small></label><input id="mon" maxlength="12" inputmode="decimal" placeholder="Ej. 380">
+<label for="des">Descripción del producto o servicio</label><input id="des" maxlength="200" placeholder="Ej. Zapatera Milano 24 color Amaya" required>
+</fieldset>
+
+<fieldset>
+<legend>3. Detalle</legend>
+<div class="rd" role="radiogroup" aria-label="Tipo de registro"><label><input type="radio" name="tipo" value="Reclamo" checked>Reclamo</label><label><input type="radio" name="tipo" value="Queja">Queja</label></div>
+<p class="nt"><b>Reclamo:</b> disconformidad relacionada con los productos o servicios. <b>Queja:</b> disconformidad no relacionada con los productos o servicios, o malestar o descontento respecto a la atención al público.</p>
+<label for="det">Detalle</label><textarea id="det" maxlength="1500" required></textarea>
+<label for="ped">Pedido <small>¿Qué solución esperas?</small></label><textarea id="ped" maxlength="800" required></textarea>
+</fieldset>
+
+<label class="ck"><input type="checkbox" id="acp" required><span>Declaro que los datos son verdaderos y acepto que Creative Home los use solo para atender mi reclamo o queja, según su <a href="/privacidad.html" target="_blank" rel="noopener">Política de privacidad</a>.</span></label>
+<div class="er" id="er" role="alert"></div>
+<div class="bt np"><button type="submit" class="b">Registrar mi reclamo</button></div>
+</form>
+
+<section class="ok" id="ok" aria-live="polite">
+<h2>Tu hoja de reclamación está lista</h2>
+<p><b>Paso final:</b> envíala por WhatsApp para que la recibamos. Guarda también tu copia (puedes imprimirla o guardarla como PDF).</p>
+<div class="hj" id="hj"></div>
+<div class="bt np">
+<button type="button" class="b g" id="bwa">Enviar por WhatsApp</button>
+<button type="button" class="b o" id="bpr">Guardar o imprimir mi copia</button>
+<button type="button" class="b o" id="bed">Corregir datos</button>
+</div>
+</section>
+
+<h2>Importante</h2>
+<ul class="nt">
+<li>La formulación del reclamo no impide acudir a otras vías de solución de controversias ni es requisito previo para interponer una denuncia ante el INDECOPI.</li>
+<li>El proveedor debe dar respuesta al reclamo o queja en un plazo no mayor a quince (15) días hábiles improrrogables.</li>
+<li>Responderemos al celular o correo que indiques. La sección "Observaciones y acciones adoptadas por el proveedor" se completa en nuestra respuesta.</li>
+</ul>
+</div></main>
+<footer><div class="w"><span>© 2026 Creative Home</span><span><a href="/privacidad.html">Política de privacidad</a> · <a href="/">Inicio</a></span></div></footer>
+</body>
+</html>

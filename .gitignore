@@ -9,3 +9,6 @@ desktop.ini
 .vercel/
 .env*
 *.log
+
+# Listas de trabajo (no publicar)
+LISTADO DE DELIVERY.txt
